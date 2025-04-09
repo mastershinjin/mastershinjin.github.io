@@ -1,0 +1,64 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+}
+
+.desktop {
+    height: 100%;
+    display: flex;
+}
+
+/* Adding Taskbar code, based off of: https://github.com/1j01/98 */
+.taskbar {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 27px;
+    display: flex;
+    flex: 1;
+}
+
+.taskbar button,
+.taskbar-divider .taskbar-divider {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.taskbar button {
+    line-height: 14px;
+    padding: 2px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.taskbar button .title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.taskbar .start-button {
+    flex-shrink: 0;
+    padding: 2px 4px;
+}
+
+.taskbar {
+    outline: 1px solid rgb(223, 223, 223);
+    border-top: 1px solid rgb(255, 255, 255);
+    background: rgb(192, 192, 192);
+    color: rgb(0, 0, 0);
+}
+
+.taskbar-divider {
+    border-left: 1px solid rgb(128, 128, 128);
+    border-right: 1px solid rgb(255, 255, 255);
+}
