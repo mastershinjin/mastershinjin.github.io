@@ -8,6 +8,10 @@ body {
     overflow: hidden;
 }
 
+.window {
+    position: absolute;
+}
+
 .desktop {
     height: 100%;
     display: flex;
