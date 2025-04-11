@@ -8,7 +8,8 @@ window.onload = function () {
 }
 
 function dragElement(el) {
-    // elmnt is a list of all HTML elements by class name 'title-bar':
+    // elmnt is a list of all HTML elements by class name 'window':
+    // TODO: Change so we only click/drag `title-bar` and then entier window can move via parentElement
     el.addEventListener('mousedown', function (e) {
         var offsetX = e.clientX - parseInt(window.getComputedStyle(this).left);
         var offsetY = e.clientY - parseInt(window.getComputedStyle(this).top);
