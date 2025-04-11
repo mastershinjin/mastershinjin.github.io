@@ -2,7 +2,6 @@
 window.onload = function () {
     var desktopWindows = document.getElementsByClassName("window");
     Array.from(desktopWindows).forEach(element => {
-        console.log("we have an element!");
         dragElement(element);
     });
 }

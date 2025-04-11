@@ -6,6 +6,7 @@ body {
     padding: 0;
     border: 0;
     overflow: hidden;
+    cursor: url(media/icons/cursor-pixel.png), pointer;
 }
 
 .window {
