@@ -11,6 +11,8 @@ body {
 
 .window {
     position: absolute;
+    resize: both;
+    overflow: auto;
 }
 
 .desktop {
