@@ -13,4 +13,4 @@ ___
 ## Credits/Documentation:
 - https://jdan.github.io/98.css (for Windows98 CSS)
 - https://98.js.org (for inspiration)
-- 
+- https://win98icons.alexmeub.com/ (Windows 98 icons pack)

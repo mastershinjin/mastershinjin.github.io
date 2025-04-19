@@ -20,7 +20,7 @@ body {
     display: flex;
 }
 
-/* Adding Taskbar code, based off of: https://github.com/1j01/98 */
+/* Adding CSS Taskbar + Desktop Icon code, based off of: https://github.com/1j01/98 */
 .taskbar {
     position: absolute;
     z-index: 2;
@@ -68,4 +68,80 @@ body {
 .taskbar-divider {
     border-left: 1px solid rgb(128, 128, 128);
     border-right: 1px solid rgb(255, 255, 255);
+}
+
+.folder-view {
+    position: relative;
+    flex: 1;
+    overflow: auto;
+}
+
+.desktop .folder-view {
+    overflow: hidden;
+}
+
+.folder-view .desktop-icon {
+    width: 75px;
+    height: 75px;
+}
+
+.folder-view .desktop-icon .title {
+    text-align: start;
+    justify-content: start;
+    white-space: nowrap;
+    height: 17px;
+    line-height: 17px;
+    padding-right: 2px;
+    padding-left: 3px;
+}
+
+.desktop-icon {
+    position: absolute;
+    outline: none;
+    display: inline-block;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+.desktop-icon .desktop-icon-wrapper {
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;
+}
+
+.desktop-icon .desktop-icon-wrapper,
+.desktop-icon .desktop-icon-wrapper .selection-effect {
+    width: 32px;
+    height: 32px;
+}
+
+.desktop-icon .icon-subtitle {
+    line-height: 13px;
+    max-height: calc(13px * 2);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.desktop-icon .icon-subtitle {
+    font-family: 'px sans nouveaux', sans-serif;
+    font-size: 6pt;
+    color: white;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.desktop-icon .desktop-icon-wrapper img {
+    image-rendering: pixelated;
+}
+
+.desktop-icon .desktop-icon-wrapper .selection-effect {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
 }
