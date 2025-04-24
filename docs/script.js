@@ -28,3 +28,5 @@ function dragElement(el) {
         window.addEventListener('mouseup', reset);
     });
 }
+
+// TODO: Create onClick function to handle mouse selecting of desktop icons

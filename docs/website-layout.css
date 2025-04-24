@@ -110,8 +110,7 @@ body {
     position: relative;
 }
 
-.desktop-icon .desktop-icon-wrapper,
-.desktop-icon .desktop-icon-wrapper .selection-effect {
+.desktop-icon .desktop-icon-wrapper {
     width: 32px;
     height: 32px;
 }
@@ -139,10 +138,11 @@ body {
     image-rendering: pixelated;
 }
 
-.desktop-icon .desktop-icon-wrapper .selection-effect {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 0;
+.selected {
+    background-color: rgb(170, 123, 0);
     opacity: 0.5;
+}
+
+.icon-title .selected {
+    color: rgb(255, 255, 0);
 }
